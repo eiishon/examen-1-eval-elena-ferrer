@@ -2,6 +2,25 @@ img.uno {
     float: left;
 }
 
-form.usu{
+p.usu{
+    align-content: right;
+}
+
+table.principal {
+    background-color:lightgoldenrodyellow;
+    border: 1px;
+    border-color: grey;
+}
+
+h3 {
+    color: darkblue;
+}
+
+img.dos{
     float: right;
+}
+
+p.tres {
+     text-align: center;
+
 }
