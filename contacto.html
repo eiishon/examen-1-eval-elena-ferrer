@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-        <header> 
+        <header> <!-- cabecera de la página web-->
                 <p><a href="index.html"> <img src="img/logo.png" alt="logo web developers" title ="logo" width="100px" height="100px" class="uno"> </a></p> 
                 <form>
-                        <p class="usu"> 
+                        <p class="usu"> <!-- LOS ATRIBUTOS SON OBLIGATORIOS PORQUE NO PUEDES INICIAR SESION SOLO CON TU USUARIO O SOLO CON TU CONTRASEÑA-->
                                Login: 
                                <input type="text" name="login"  required>
                                Pass:
                                <input type="password" name ="contraseña" required>
-                               <input type="submit" name="enviar" value ="Enviar">
+                                <!-- SE ENVIA ESTE MENSAJE YA QUE EL BOTON NO LLEVA A NINGUNA OTRA PAGINA-->
+                            <input type="button" onclick="mensaje('Lamentamos las molestias, la página aún no tiene esa función')" value="Enviar">
                            </p>
                        </form>
                 <h1> Web developers </h1>
@@ -42,38 +43,42 @@
             </table>
         </header>
         <hr>
-        <main>
+        <main> <!--LA PARTE MÁS IMPORTANTE DE LA PÁGINA WEB-->
                 <p class="usu">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.0580051903476!2d-0.39040358463267943!3d39.46801827948676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f46da4855e1%3A0x9c6c795bc92d164e!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Abastos!5e0!3m2!1ses!2ses!4v1574154380199!5m2!1ses!2ses" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </p> 
-            <p  class="izq">
-             <form>
+             <form> <!-- NOMBRE, AÑO DE NACIMIENTO E EMAIL SON REQUIRED PARA SABER QUIEN ES LA PERSONA QUE MANDA LA INFORMACIÓN-->
                     
-                <p > Nombre: <input type="text" name="nombre" size ="30" placeholder="Introduzca su nombre" required></p> 
-                 
-                    <p>    Año nacimiento: <input type="number" name="anyonacimiento" min="1900" placeholder="Introduzca año nacimiento" required> </p>  
-                    <p>Email: <input type="email" name="correoelectronico" size="30" placeholder="Introduzca su email" required></p>  
-                    <p>Observaciones: <br> <textarea name="Observaciones" rows="5" cols="30" placeholder="Introduzca su comentario"></textarea>
-                
+                <p class="izq">Nombre: <input type="text" name="nombre" size ="30" placeholder="Introduzca su nombre" required></p> 
+                <p class="izq">Año nacimiento: <input type="number" name="anyonacimiento" min="1900" placeholder="Introduzca año nacimiento" required> </p>  
+                <!-- AÑO DE NACIMIENTO EMPIEZA EN 1900 PARA PONER UN NÚMERO MULTIPLO DE 10 A LA PAR QUE REALISTA YA QUE HAY MUY POCAS PERSONAS NACIDAS ANTES DE 1900 QUE SIGAN VIVAS-->
+                <p class="izq">Email: <input type="email" name="correoelectronico" size="30" placeholder="Introduzca su email" required></p>  
+                <p class="izq">Observaciones: <br> <textarea name="Observaciones" rows="5" cols="30" placeholder="Introduzca su comentario"></textarea>
                 <p>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Borrar">
                 </p> 
              </form>   
 
-            </p>
+            
            
                
             
         </main>
         <hr>
-       <footer class="color">
+       <footer class="color"> <!-- LA PARTE FINAL DE LA PÁGINA CON INFORMACION SOBRE EL AUTOR Y SU CONTACTO-->
            <address>
                Autora: Elena Ferrer Campos <br>
                Correo: elenaferrercampos@gmail.com
            </address> <br>
            Última modificación: 19/11/2019
        </footer>
+       <!--LO QUE PERMITE QUE SE ENVÍE EL MENSAJE-->
+    <script>  
+            function mensaje(texto) {
+              alert(texto);
+            }
+          </script>
     
 </body>
 </html>
