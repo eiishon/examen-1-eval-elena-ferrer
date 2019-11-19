@@ -3,13 +3,18 @@ img.uno {
 }
 
 p.usu{
-    align-content: right;
+    text-align: right;
 }
-
+p.con{
+    text-align: left;
+}
 table.principal {
     background-color:lightgoldenrodyellow;
-    border: 1px;
-    border-color: grey;
+    border: darkgrey 2px solid;
+    
+}
+td{
+    border: darkgrey 2px solid;
 }
 
 h3 {
