@@ -3,18 +3,20 @@ img.uno {
 }
 
 p.usu{
-    text-align: right;
+    float: right;
 }
-p.con{
-    text-align: left;
+
+p.izq{
+    float: left;
 }
+
 table.principal {
     background-color:lightgoldenrodyellow;
     border: darkgrey 2px solid;
     
 }
 td{
-    border: darkgrey 2px solid;
+    border-right-color: darkgrey 2px solid;
 }
 
 h3 {
@@ -32,3 +34,4 @@ p.tres {
 footer.color{
     background-color: lightgray;
 }
+
